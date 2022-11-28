@@ -5,7 +5,7 @@ RUN pip3 install flask
 RUN useradd -ms /bin/bash backend
 WORKDIR /home/backend
 
-COPY /app /home/backend/app
+COPY /. /home/backend/app
 
 WORKDIR /home/backend/app
 
