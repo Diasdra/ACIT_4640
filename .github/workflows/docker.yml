@@ -21,13 +21,13 @@ jobs:
         uses: docker/build-push-action@v3
         with:
             push: true
-            context: ./html/
+            context: /html/
             tags: diasdra/4640web:latest
 
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
             push: true
-            context: ./app/
+            context: /app/
             tags: diasdra/4640app:latest
             
