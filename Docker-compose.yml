@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build:
-      dockerfile: ./app/Dockerfile
+      dockerfile: diasdra/4640app:latest
     ports:
       - 5000:5000
     expose:
@@ -10,7 +10,7 @@ services:
     env_file: variables.env
   web:
     build:
-      dockerfile: ./html/Dockerfile
+      dockerfile: diasdra/4640web:latest
     ports:
       - 8080:80
     env_file: variables.env
