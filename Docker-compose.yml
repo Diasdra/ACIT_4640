@@ -1,16 +1,14 @@
 version: '3'
 services:
   app:
-    build:
-      dockerfile: diasdra/4640app:latest
+    image: diasdra/4640app:latest
     ports:
       - 5000:5000
     expose:
       - 5000
     env_file: variables.env
   web:
-    build:
-      dockerfile: diasdra/4640web:latest
+    image: diasdra/4640web:latest
     ports:
       - 8080:80
     env_file: variables.env
